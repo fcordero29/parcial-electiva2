@@ -24,13 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./C:/Users/enman/Desktop/parcial1
+  
 
       - name: Run tests
         run: npm test
-        working-directory: ./C:/Users/enman/Desktop/parcial1
+        
 
       - name: Deploy to Surge (optional)
         run: npm run deploy
         if: github.ref == 'refs/heads/main'
-        working-directory: ./C:/Users/enman/Desktop/parcial1
+       
