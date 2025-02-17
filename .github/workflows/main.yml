@@ -1,6 +1,4 @@
-Based on the provided path `PS C:\Users\enman\Desktop\parcial1>`, it seems that the directory structure needs to be updated in the GitHub Actions workflow file. Here is the updated workflow configuration to reflect the correct directory:
 
-```yaml
 name: CI Workflow
 
 on:
