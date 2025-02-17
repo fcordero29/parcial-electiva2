@@ -1,3 +1,6 @@
+Based on the provided path `PS C:\Users\enman\Desktop\parcial1>`, it seems that the directory structure needs to be updated in the GitHub Actions workflow file. Here is the updated workflow configuration to reflect the correct directory:
+
+```yaml
 name: CI Workflow
 
 on:
@@ -23,10 +26,13 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./C:/Users/enman/Desktop/parcial1
 
       - name: Run tests
         run: npm test
+        working-directory: ./C:/Users/enman/Desktop/parcial1
 
       - name: Deploy to Surge (optional)
         run: npm run deploy
         if: github.ref == 'refs/heads/main'
+        working-directory: ./C:/Users/enman/Desktop/parcial1
